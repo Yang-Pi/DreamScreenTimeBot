@@ -11,6 +11,6 @@ Telegram-bot: *отправка случайного скриншота экра
 
 ## Что это и как работает
 **Волшебное время** - время типа *5:55, 11:11, 14:41* и т.п. В эти мгновения можно загадывать желения!
-![Без-имени-1](https://user-images.githubusercontent.com/55200686/89730373-a6d89880-da46-11ea-9d2a-498f39118c88.png)
-[Изображение в лучшем качестве](https://github.com/Yang-Pi/DreamTime/issues/2)
+
+![gif](https://user-images.githubusercontent.com/55200686/92299696-7dcff880-ef5d-11ea-9bf4-8e13e2b72d1b.gif)
 
