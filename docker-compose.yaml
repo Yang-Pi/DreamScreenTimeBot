@@ -1,0 +1,35 @@
+version: '3.9'
+services:
+  dreamScreenTime-redis:
+    container_name: dreamScreenTime-redis
+    image: redis:5.0
+    deploy:
+      resources:
+        limits:
+          memory: 64M
+        reservations:
+          memory: 16M
+    ports:
+      - 6379:6379/tcp
+    networks:
+      dreamScreenTime-network:
+        aliases:
+          - redis
+
+  redis-commander:
+    container_name: dreamScreenTime-redis-commander
+    hostname: redis-commander
+    image: rediscommander/redis-commander:latest
+    restart: always
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    ports:
+      - "6381:8081"
+    networks:
+      dreamScreenTime-network:
+        aliases:
+          - redis_commander
+
+networks:
+  dreamScreenTime-network:
+    driver: bridge
