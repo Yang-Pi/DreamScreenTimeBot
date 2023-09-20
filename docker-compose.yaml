@@ -1,5 +1,17 @@
 version: '3.9'
 services:
+
+  dreamScreenTime:
+    container_name: dreamScreenTime
+    image: dreamscreentime:${PROJECT_VERSION}
+    build: ./apps/telegram
+    environment:
+      - CACHE_REDIS_HOST=redis
+    env_file:
+      - dreamScreenTime.env
+    networks:
+      dreamScreenTime-network:
+
   dreamScreenTime-redis:
     container_name: dreamScreenTime-redis
     image: redis:5.0
@@ -10,7 +22,7 @@ services:
         reservations:
           memory: 16M
     ports:
-      - 6379:6379/tcp
+      - "6379:6379/tcp"
     networks:
       dreamScreenTime-network:
         aliases:
@@ -27,8 +39,6 @@ services:
       - "6381:8081"
     networks:
       dreamScreenTime-network:
-        aliases:
-          - redis_commander
 
 networks:
   dreamScreenTime-network:

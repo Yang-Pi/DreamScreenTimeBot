@@ -4,3 +4,4 @@ app/src/main/java/META-INF
 *.iml
 target
 app/src/main/resources/config.properties
+*.env
