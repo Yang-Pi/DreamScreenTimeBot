@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mvn clean package
+
 PROJECT_VERSION=`mvn -q -Dexec.executable=echo -Dexec.args='${project.version}' --non-recursive exec:exec`
 export PROJECT_VERSION
 
