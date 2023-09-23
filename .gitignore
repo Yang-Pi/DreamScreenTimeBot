@@ -1,6 +1,7 @@
 .idea
 out
-src/main/java/META-INF
-DreamTime.iml
+app/src/main/java/META-INF
+*.iml
 target
-src/main/resources/config.properties
+app/src/main/resources/config.properties
+*.env
