@@ -12,6 +12,8 @@ Telegram-bot - sending random lockscreen and cat 🐈 photo.
 - SpringFramework
 #### Images Storage
 - Amazon S3 (AWS)
-#### PaaS
-- Heroku
+#### <s>PaaS
+- Heroku</s>
+#### Hosting
+- [IHOR](https://www.ihor.ru/)
 
